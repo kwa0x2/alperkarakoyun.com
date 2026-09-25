@@ -29,6 +29,41 @@ export const categories: readonly ("All" | Category)[] = [
 
 export const projects: Project[] = [
   {
+    slug: "tunploy",
+    title: "Tunploy",
+    tagline: "Self-hosted WireGuard VPN panel",
+    description:
+      "A self-hosted control panel for your own WireGuard VPN servers, shipped as a single Docker container. Spin up VPN servers on this or other machines over SSH, add devices by QR code, and see who is connected and how much they use, without writing a config file.",
+    category: "Full-Stack",
+    featured: true,
+    status: "live",
+    stack: [
+      "Go",
+      "WireGuard",
+      "Docker",
+      "SQLite",
+      "SSH",
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Let’s Encrypt",
+      "Amazon S3",
+      "GitHub Actions",
+    ],
+    links: [
+      { label: "Live", href: "https://tunploy.alperkarakoyun.com" },
+      { label: "Code", href: "https://github.com/kwa0x2/tunploy" },
+    ],
+    highlights: [
+      "One-command install; each VPN runs in its own container",
+      "Multi-node: runs VPN servers on other VPSes over SSH",
+      "Per-device data limits, expiry, live usage and activity log",
+      "Scoped HTTP API, encrypted S3 backups, updates that roll back",
+    ],
+  },
+  {
     slug: "taskpricer",
     title: "TaskPricer",
     tagline: "AI pricing for freelance work",
@@ -158,7 +193,6 @@ export const projects: Project[] = [
     description:
       "A stack-based sorting algorithm built in Go for the 42 Heilbronn sorting challenge, sorting data with a limited instruction set and two-stack constraints. It also ships with a web-based visualizer that animates each move.",
     category: "Tools",
-    featured: true,
     stack: ["Go", "Algorithms", "Data Structures", "Web"],
     links: [
       { label: "Code", href: "https://github.com/kwa0x2/GoSortStack" },
