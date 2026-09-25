@@ -54,3 +54,10 @@ src/
   components/             # hero, projects, cards, nav, footer, icons, theme
   lib/                    # site + project data
 ```
+
+## Deploying
+
+The site is deployed on [Dokploy](https://dokploy.com) with the Nixpacks build type.
+Next.js 16 needs Node 20.9 or newer, so `package.json` pins `engines.node` and
+`.nvmrc` selects Node 22; without them Nixpacks falls back to an older Node and
+`next build` fails.
